@@ -1,10 +1,17 @@
-# Introduction
+**Current Status of this repository** -> a work in progress
 
-This document outlines the design of a machine learning algorithm to roster staff. It is said that 75% of the time spent designing an algorithm is used considering the data you have available, what insights it provides and then creating a robust machine learning algorithm that will work with the data.
+# Background
 
-**Current Status of this repository** -> a initial dump of my thoughts
+This is an issue that I have been working on and pondering for a long time. I have owned retail businesses for many years, know people who work at the upper levels of large retail organizations and worked as CTO in organizations that employ large number of staff. For this reason, staff rostering has been something I have thought about for a long time. It wasn't until a few weeks ago, when chatting to a friend, that I was reminded that staff rostering still wasn't an issue that had been solved effectively. I decided to see if using deep learning could help bridge the gap between current solutions and fully automated/digital staff rostering.
 
-# The end goal
+# Using this in your organization
+
+Deep learning models sometimes need to be tweaked to suit a particular organization's data or business model. When discussing the data and creating the deep learning model, I will try to make it obvious as to how you could tweak the model to fit your particular use case. Alternatively, if you would like me to help tweak the model to fit your organization's requirements, please contact me.
+
+# End goal
+
+This document outlines the design of a software program which leverages the power of deep learning to automatically roster staff. I will be creating and documenting this algorithm in the context of a retail supermarket chain, though the ideas documented here could be easily transferred over to any other industry which needs to roster people.
+
 The end goal of this algorithm will for the algorithm to roster staff automatically and have rostered staff levels reflect how many customers need to be served, while also considering:
 
 1. The organizations legal responsibilities
@@ -18,15 +25,15 @@ The end goal of this algorithm is to:
 1. increase the quality of customer service
 2. reduce staff costs and therefore increase profitability
 
-# Analogy
+# Data Analysis
 
-If you have read any of my previous discussions around developing machine learning models, I like to use analogies to illustrate what the data means in a "real world" context. **I will be using the analogy of a retail supermarket chain**
+The data you feed a deep learning algorithm is extremely important because a deep learning algorithm learns from the data you feed it. If you do not understand the data, misinterpret what the data is telling you, feed the algorithm incorrect data or miss important correlations, the algorithm will not be particularly useful. This is the main reason why most deep learning experts spend 75% of their time on the data.
 
-# Data required
+With this in mind, we will be considering the available data first and then move onto creating a deep learning model to help reduce loss prevention.
 
-There is always a balancing act between the amount of data easily available and the amount of data required to create a good machine learning model. One of the great things about Machine Learning models is that they often shed much more information than expected. For just a little more data, the organization gets many new insights into their business.
+# Data Correlations
 
-In some situations, you need multiple machine learning algorithms working together to create the required outcome. This problem is one that requires multiple algorithms because staff levels should follow customer service requirements. 
+In some situations, you need multiple deep learning algorithms working together to create the required outcome. This problem is one that requires multiple algorithms because staff levels should follow customer service requirements. 
 
 The models we will need to create are:
 
